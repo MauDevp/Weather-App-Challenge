@@ -1,0 +1,20 @@
+.weather-container{
+    display: inline-flex;
+    padding: var(--Numbers-5-rem-mobile);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Numbers-6-rem-mobile);
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: url('https://s3-alpha-sig.figma.com/img/5efd/9749/63257fe38416d29d014f24aa78c5083c?Expires=1727654400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MAKcVefHh2uP~ATzvgNKk-HgwY5suEis44AwWH9KFsUKQCpUZy0XaCy7BjgYCaosCk3pnXWAofVUWK8t2Vq9nemmShE00aM8sc76LgNYsHRBMxha~rgpwvJztCiux21REdjR8bH5CqTEabq30HjWfRay8gSzzx72cIXbJKaYUAT2q3ffz4-omL9UqrgNA6zOWTVtmvTJFXHd36Mu~UJVwvhf66uZixoUmEYzNSIXH1Y8ToZ9R9DPjJIL4XbILK3L4w5kViz8tqbS58jEnOCQaAWZkWQF3ppwmy-RNecnD~8wR9cCciAdwAQ8xzQj9OTiHHLbsdgnavtkF5WapDiMbg__') lightgray 50% / cover no-repeat;
+}
+
+@media (min-width: 768px) {
+    .weather-container {
+        display: flex;
+        width: 22rem; 
+        height: 42.75rem;
+        padding: var(--Numbers-5-rem);
+        gap: var(--Numbers-6-rem);
+    }
+}

@@ -1,0 +1,25 @@
+.caracteristics{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Numbers-3-rem);
+    align-self: stretch
+}
+
+.weather-information{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Numbers-5-rem);
+    align-self: stretch;
+}
+
+.weather-text{
+    color: var(--colors-grayscale-gray-50);
+}
+
+.tagIcon{
+    stroke: var(--colors-grayscale-gray-800);
+    width: var(--Numbers-4-rem);
+    height: var(--Numbers-4-rem);
+}

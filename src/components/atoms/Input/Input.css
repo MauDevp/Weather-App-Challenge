@@ -1,0 +1,32 @@
+.input {
+    display: flex;
+    min-width: 240px;
+    padding: var(--Numbers-3-rem-mobile, 8px);
+    border-radius: var(--Numbers-2-rem-mobile, 4px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--colors-grayscale-gray-100);
+    border: none;
+    
+    font-size: var(--mobile---caption);
+    color: var(--colors-grayscale-gray-600);
+    font-weight: 400;
+    line-height: 100%;
+}
+input:active, input:focus {
+    outline: none;
+}
+input::placeholder {
+    color: var(--colors-grayscale-gray-400);
+}
+
+@media (min-width: 768px) {
+    .input {
+        min-width: 262px;
+        padding: var(--Numbers-3-rem, 12px);
+        border-radius: var(--Numbers-2-rem, 8px);
+        font-size: var(--desktop---caption);
+    }
+    
+}

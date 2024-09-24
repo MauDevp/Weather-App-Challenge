@@ -1,0 +1,33 @@
+.footer-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Numbers-4-rem-mobile);
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    gap: var(--Numbers-4-rem-mobile);
+}
+.location-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--Numbers-4-rem-mobile);
+}
+
+.MakerPin {
+    stroke: var(--colors-brand-blue-500);
+    width: var(--Numbers-4-rem);
+    height: var(--Numbers-4-rem);
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        gap: var(--Numbers-4-rem);
+    }
+    .buttons-container{
+        gap: var(--Numbers-3-rem-mobile);
+    }
+}

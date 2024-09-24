@@ -1,0 +1,12 @@
+.user-input-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--Numbers-3-rem-mobile);
+    align-self: stretch;
+}
+
+@media (min-width: 768px) {
+    .user-input-field {
+        gap: var(--Numbers-3-rem);
+    }
+}

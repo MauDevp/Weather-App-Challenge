@@ -1,0 +1,21 @@
+.homeUsers-container{
+    display: flex;
+    padding: var(--Numbers-7-rem) 0.9375rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.125rem;
+}
+
+.homeUsers-TextContainer{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+.homeUsers-CarsContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales en desktop */
+    gap: 2rem var(--Numbers-6-rem);
+    flex-wrap: wrap;
+}

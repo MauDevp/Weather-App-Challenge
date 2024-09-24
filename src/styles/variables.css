@@ -1,0 +1,72 @@
+:root {
+    /* PRIMITIVES */
+    /* === Brand === */
+    --colors-brand-blue-50: #ecf1ff;
+    --colors-brand-blue-100: #dde5ff;
+    --colors-brand-blue-200: #c2ceff;
+    --colors-brand-blue-300: #9cadff;
+    --colors-brand-blue-400: #7580ff;
+    --colors-brand-blue-500: #5556ff;
+    --colors-brand-blue-600: #4336f5;
+    --colors-brand-blue-700: #3929d9;
+    --colors-brand-blue-800: #3328bf;
+    --colors-brand-blue-900: #2a2689;
+    --colors-brand-blue-950: #1b1650;
+    /* === Functional === */
+    --colors-functional-green: #3bd160;
+    --colors-functional-red: #ed3b3b;
+    --colors-functional-blue: #3b8fff;
+    --colors-functional-yellow: #ffb547;
+    /* === Grayscale === */
+    --colors-grayscale-gray-950: #09090b;
+    --colors-grayscale-gray-900: #18181b;
+    --colors-grayscale-gray-800: #27272a;
+    --colors-grayscale-gray-700: #3f3f46;
+    --colors-grayscale-gray-600: #52525b;
+    --colors-grayscale-gray-500: #71717a;
+    --colors-grayscale-gray-400: #a1a1aa;
+    --colors-grayscale-gray-300: #d4d4d8;
+    --colors-grayscale-gray-200: #e4e4e7;
+    --colors-grayscale-gray-100: #f4f4f5;
+    --colors-grayscale-gray-50: #fafafa;
+
+    /* Typography */
+    /* === Desktop === */
+    --desktop---headline-1: 48px;
+    --desktop---headline-2: 32px;
+    --desktop---headline-3: 24px;
+    --desktop---headline-4: 16px;
+    --desktop---body: 16px;
+    --desktop---caption: 14px;
+    --desktop---button: 16px;
+    /* === Mobile === */
+    --mobile---headline-1: 32px;
+    --mobile---headline-2: 24px;
+    --mobile---headline-3: 20px;
+    --mobile---headline-4: 14px;
+    --mobile---body: 14px;
+    --mobile---caption: 12px;
+    --mobile---button: 14px;
+
+    /* Numbers */
+    --Numbers-1-rem: 0.25rem;
+    --Numbers-1-rem-mobile: 0.125rem;
+    --Numbers-2-rem: 0.5rem;
+    --Numbers-2-rem-mobile: 0.25rem;
+    --Numbers-3-rem: 0.75rem;
+    --Numbers-3-rem-mobile: 0.5rem;
+    --Numbers-4-rem: 1rem;
+    --Numbers-4-rem-mobile: 0.75rem;
+    --Numbers-5-rem: 1.5rem;
+    --Numbers-5-rem-mobile: 1rem;
+    --Numbers-6-rem: 2rem;
+    --Numbers-6-rem-mobile: 1.5rem;
+    --Numbers-7-rem: 3rem;
+    --Numbers-7-rem-mobile: 2rem;
+    --Numbers-8-rem: 4rem;
+    --Numbers-8-rem-mobile: 3rem;
+    --Numbers-9-rem: 4.5rem;
+    --Numbers-9-rem-mobile: 4rem;
+    --Numbers-10-rem: 5rem;
+    --Numbers-10-rem-mobile: 4.5rem;
+}

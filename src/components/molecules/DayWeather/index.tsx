@@ -1,0 +1,1 @@
+export { DayWeather } from './DayWeather';

@@ -1,0 +1,16 @@
+.cardContainer{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--Numbers-5-rem-mobile);
+    gap: var(--Numbers-6-rem-mobile);
+    border-radius: 1.25rem;
+    background: var(--colors-grayscale-gray-100);
+}
+
+@media (min-width: 768px) {
+    .cardContainer {
+        padding: var(--Numbers-5-rem);
+        gap: var(--Numbers-6-rem);
+    }
+}

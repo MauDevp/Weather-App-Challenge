@@ -1,0 +1,80 @@
+/* Clases de estilo sin media queries (Mobile-First) */
+.headline1 {
+    font-family: "Plus Jakarta Sans";
+    font-size: var(--mobile---headline-1);
+    color: var(--colors-grayscale-gray-900);
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.headline2 {
+    font-family: "Plus Jakarta Sans";
+    font-size: var(--mobile---headline-2);
+    color: var(--colors-grayscale-gray-800);
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.headline3 {
+    font-family: "Plus Jakarta Sans";
+    font-size: var(--mobile---headline-3);
+    color: var(--colors-grayscale-gray-700);
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.headline4 {
+    font-family: "Plus Jakarta Sans";
+    font-size: var(--mobile---headline-4);
+    color: var(--colors-grayscale-gray-700);
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.body {
+    font-family: "Plus Jakarta Sans";
+    font-size: var(--mobile---body);
+    color: var(--colors-grayscale-gray-600);
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.caption {
+    font-family: "Plus Jakarta Sans";
+    font-size: var(--mobile---caption);
+    color: var(--colors-grayscale-gray-400);
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.buttonText {
+    font-family: "Plus Jakarta Sans";
+    font-size: var(--mobile---button);
+    line-height: 100%;
+    font-weight: 600;
+}
+
+/* Media Queries para Desktop */
+@media (min-width: 768px) {
+    .headline1 {
+        font-size: var(--desktop---headline-1);
+    }
+    .headline2 {
+        font-size: var(--desktop---headline-2);
+    }
+    .headline3 {
+        font-size: var(--desktop---headline-3);
+    }
+    .headline4 {
+        font-size: var(--desktop---headline-4);
+    }
+    .body {
+        font-size: var(--desktop---body);
+    }
+    .caption {
+        font-size: var(--desktop---caption);
+    }
+    .buttonText {
+        font-size: var(--desktop---button);
+    }
+}

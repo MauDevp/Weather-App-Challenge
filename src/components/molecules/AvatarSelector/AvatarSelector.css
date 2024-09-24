@@ -1,0 +1,19 @@
+.profile-form {
+    display: flex;
+    width: 22.125rem;
+    align-items: center;
+    gap: var(--Numbers-3-rem);
+}
+.profile-select{
+    display: flex;
+    width: 16.375rem;
+    height: 4.125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Numbers-3-rem);
+    flex-shrink: 0;
+}
+
+/* .profileLabel{
+    color: var(--colors-grayscale-gray-900);
+} */

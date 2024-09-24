@@ -1,0 +1,59 @@
+.select-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.select {
+    flex: 1;
+    width: 100%;
+    min-width: 210px;
+    padding: var(--Numbers-3-rem-mobile);
+    border-radius: var(--Numbers-2-rem);
+    background: var(--colors-grayscale-gray-100);
+    border: none;
+    font-size: var(--mobile---caption);
+    color: var(--colors-grayscale-gray-600);
+    font-weight: 400;
+    line-height: 100%;
+    appearance: none; /* Elimina el estilo por defecto del select */
+    padding-right: 2rem; /* Espacio para el icono */
+}
+
+.select:active,
+.select:focus {
+    outline: none;
+    border-color: var(--colors-primary);
+    box-shadow: 0 0 0 0.1rem var(--colors-grayscale-gray-200);
+}
+
+/* Estilos para las opciones */
+.select option {
+    color: var(--colors-grayscale-gray-600);
+}
+
+.select option[disabled] {
+    color: var(--colors-grayscale-gray-400);
+}
+
+.select-icon {
+    margin-left: -2rem; /* Ajusta el margen para posicionar el icono */
+    transition: transform 0.5s ease; /* Transición para la rotación */
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none; /* El icono no debe interferir con la interacción del select */
+}
+
+.select-icon.open {
+    transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+    .select {
+        min-width: 280px;
+        padding: var(--Numbers-3-rem, 12px);
+        border-radius: var(--Numbers-2-rem, 8px);
+        font-size: var(--desktop---caption);
+    }
+}

@@ -1,0 +1,1 @@
+export { AvatarSelector } from './AvatarSelector';  // Exporta por defecto el componente AvatarSelector
