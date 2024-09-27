@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import { UserCard, DeleteConfirmationModal } from "../../molecules";
-import "./homeUsers.css";
+import "./HomeUsers.css";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from '../../../store/store';
 import { openDeleteModal, closeDeleteModal } from '../../../store/slices/userSlice';
