@@ -1,4 +1,4 @@
-import './tag.css';
+import './Tag.css';
 import '@styles/typography.css';
 
 type TagProps = {
