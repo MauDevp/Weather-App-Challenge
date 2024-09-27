@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import {HomeUsers} from './homeUsers';
+import {HomeUsers} from './HomeUsers';
 
 const meta: Meta<typeof HomeUsers> = {
     title: 'Components/Organisms/HomeUsers',

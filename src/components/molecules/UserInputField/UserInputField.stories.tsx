@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import UserInputField  from './UserInputField';
+import {UserInputField}  from './/UserInputField';
 
 const meta: Meta<typeof UserInputField> = {
     title: 'Components/Molecules/UserInputField',

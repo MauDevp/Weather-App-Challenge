@@ -15,7 +15,7 @@ interface User {
     photo?: string;
 }
 
-interface UserState {
+export interface UserState {
     users: User[];
     username: string;
     coordinates: Coordinates;
