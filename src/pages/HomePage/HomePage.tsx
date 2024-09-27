@@ -1,15 +1,17 @@
-import { Link } from 'react-router-dom';
+import ReactDOM from 'react-dom';
 import { HomeUsers } from '../../components/organisms';
-import { Navbar } from '../../components/molecules';
+import { Navbar, NewUserForm } from '../../components/molecules';
 import './HomePage.css';
 
+
 export const HomePage = () => {
+    const mostrarForm = true;
     return (
         <>
+            {mostrarForm && ReactDOM.createPortal(<NewUserForm />, document.querySelector('#modal') as Element)}
             <Navbar />
             <section className='section-users'>
                 <HomeUsers />
-                <Link to="/users">Ver usuarios</Link>
             </section>
         </>
     );

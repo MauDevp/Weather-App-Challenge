@@ -1,0 +1,1 @@
+export { NewUserContainer } from './NewUserContainer';

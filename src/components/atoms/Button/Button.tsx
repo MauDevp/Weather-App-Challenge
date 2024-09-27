@@ -21,6 +21,9 @@ type Props = {
 
     /** Icono del botón */
     iconIdentifier?: string,
+
+    /** Tipo de botón */
+    type? : React.ButtonHTMLAttributes<HTMLButtonElement>['type'],
 };
 
 /** Button personalizado con props */
@@ -30,6 +33,7 @@ export const Button = ({
         variants = 'primary',
         iconPosition='none',
         iconIdentifier='arrow-left',
+        type='button',
         onClick
     }: Props) => {
 
@@ -48,7 +52,7 @@ export const Button = ({
 
     return (
         // Botón con clase predefinida
-        <button onClick={onClick} className={`button ${variants} sizeButton ${iconPosition === 'alone' ? 'icon-alone' : ''}`}>
+        <button type={type} onClick={onClick} className={`button ${variants} sizeButton ${iconPosition === 'alone' ? 'icon-alone' : ''}`}>
             {/* Lógica para renderizar el ícono en la posición correcta */}
             {iconPosition === 'left' && renderIcon()}
             {iconPosition !== 'alone' && <span className="label buttonText">{label}</span>}

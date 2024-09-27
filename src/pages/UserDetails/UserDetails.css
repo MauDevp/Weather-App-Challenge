@@ -1,0 +1,66 @@
+.section-weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 12%;
+    width: min-content;
+}
+.prognosticUser-TextContainer{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 3.125rem;;
+    margin-top: 3rem;;
+}
+.weatherPrognostic-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Numbers-6-rem);
+}
+
+.weatherPrognostic-widgets-container {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    gap: var(--Numbers-6-rem-mobile); /* Espacio entre los elementos del grid */
+    justify-content: center;
+    align-items: center;
+}
+
+.cardMaps-container{
+    width: 90%;
+}
+.dimensionContainerMap{
+    width: 88%;
+    height: 30vh;
+    gap: 0px;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .section-weather {
+        padding: 0rem 5%;
+    }
+    .weatherPrognostic-container {
+        flex-direction: row;
+        gap: var(--Numbers-5-rem);
+    }
+    .weatherPrognostic-widgets-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto); /* Dos columnas de igual tamaño */
+        grid-template-rows: repeat(2, auto); /* Dos filas de igual tamaño */
+        gap: var(--Numbers-6-rem); /* Espacio entre los elementos del grid */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .dimensionContainerMap {
+        width: 100%;
+        height: 52vh;
+    }
+}

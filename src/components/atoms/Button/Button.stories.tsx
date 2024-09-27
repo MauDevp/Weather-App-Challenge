@@ -18,7 +18,7 @@ const meta: Meta<typeof Button> = {
         },
         iconIdentifier: {
             control: {type: 'radio'},
-            options: ['arrow-left', 'trash'],
+            options: ['arrow-left', 'trash', 'chevron-down', 'marker-pin', 'x'],
         },
     }
 }

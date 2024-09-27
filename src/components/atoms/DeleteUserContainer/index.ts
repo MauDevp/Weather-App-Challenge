@@ -1,0 +1,1 @@
+export { DeleteUserContainer } from './DeleteUserContainer';

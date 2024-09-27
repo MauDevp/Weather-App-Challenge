@@ -1,0 +1,21 @@
+.delete-confirmation-modal{
+    display: flex;
+    flex-direction: column;
+    gap: var(--Numbers-6-rem);
+    padding: var(--Numbers-1-rem);
+    background-color: var(--Colors-White);
+    border-radius: var(--Numbers-5-rem);
+    box-shadow: var(--Box-Shadow-1);
+}
+.delete-confirmation-sectionButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--Numbers-4-rem);
+}
+.delete-confirmation-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--Numbers-1-rem);
+}

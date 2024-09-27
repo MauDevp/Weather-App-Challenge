@@ -12,10 +12,10 @@ type WeatherProps = {
         wind: number;
         uvIndex: number;
         visibility: number;
-    }
-}
+    };
+};
 
-export const Weather = ({date, temperature, location}: WeatherProps) => {
+export const Weather = ({ date, temperature, location, caracteristics }: WeatherProps) => {
     return (
         <WeatherContainer>
             <div className="weather-information weather-text">
@@ -26,26 +26,26 @@ export const Weather = ({date, temperature, location}: WeatherProps) => {
             </div>
             <div className="caracteristics">
                 <Tag
-                    icon={ <Droplets className="tagIcon" /> }
+                    icon={<Droplets className="tagIcon" />}
                     text="Humedad"
-                    value="33.2 °C"
+                    value={caracteristics?.humidity ? `${caracteristics.humidity}%` : 'N/A'}
                 />
                 <Tag
-                    icon={ <Wind className="tagIcon" /> }
+                    icon={<Wind className="tagIcon" />}
                     text="Viento"
-                    value="33.2 °C"
+                    value={caracteristics?.wind ? `${caracteristics.wind} m/s` : 'N/A'}
                 />
                 <Tag
-                    icon={ <UV className="tagIcon" /> }
-                    text="UV indice"
-                    value="33.2 °C"
+                    icon={<UV className="tagIcon" />}
+                    text="UV índice"
+                    value={caracteristics?.uvIndex ? `${caracteristics.uvIndex}` : 'N/A'}
                 />
                 <Tag
-                    icon={ <Eye className="tagIcon" /> }
+                    icon={<Eye className="tagIcon" />}
                     text="Visibilidad"
-                    value="33.2 °C"
+                    value={caracteristics?.visibility ? `${caracteristics.visibility} m` : 'N/A'}
                 />
             </div>
         </WeatherContainer>
-    )
-}
+    );
+};

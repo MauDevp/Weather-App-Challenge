@@ -1,4 +1,5 @@
 .footer-container{
+    width: 100%;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -7,14 +8,20 @@
 
 .buttons-container{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     gap: var(--Numbers-4-rem-mobile);
 }
 .location-container{
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: var(--Numbers-4-rem-mobile);
+}
+.location-text{
+    width: 100%;
 }
 
 .MakerPin {
@@ -28,6 +35,6 @@
         gap: var(--Numbers-4-rem);
     }
     .buttons-container{
-        gap: var(--Numbers-3-rem-mobile);
+        gap: var(--Numbers-3-rem);
     }
 }

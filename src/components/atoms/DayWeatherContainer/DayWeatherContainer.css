@@ -1,5 +1,6 @@
 .day-weather-container{
     display: inline-flex;
+    width: 78%;
     padding: var(--Numbers-5-rem);
     flex-direction: column;
     justify-content: center;

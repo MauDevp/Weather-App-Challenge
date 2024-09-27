@@ -1,29 +1,36 @@
-import { useState } from 'react';
-import { Avatar, Select } from '../../atoms';
-import './AvatarSelector.css';  // Estilos específicos para esta molécula
-import '@styles/typography.css';  // Estilos de tipografía
-import Image from '@assets/images/avatars/profile-1.jpg';
-import Image2 from '@assets/images/avatars/profile-2.jpg';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../../store/store';
+import { setSelectedAvatar } from '../../../store/slices/userSlice';
 
- // Definir las opciones como objetos con value y label
+import { Avatar, Select } from '../../atoms';
+import { image1, image2, image3, image4, image5, image6, image7, image8 } from '../../../assets';
+
+import './AvatarSelector.css';
+import '@styles/typography.css';
+
 const imageOptions = [
-    { value: Image, label: 'Profile 1' },
-    { value: Image2, label: 'Profile 2' },
+    { value: image1, label: 'Profile 1' },
+    { value: image2, label: 'Profile 2' },
+    { value: image3, label: 'Profile 3' },
+    { value: image4, label: 'Profile 4' },
+    { value: image5, label: 'Profile 5' },
+    { value: image6, label: 'Profile 6' },
+    { value: image7, label: 'Profile 7' },
+    { value: image8, label: 'Profile 8' },
 ];
 
 export const AvatarSelector = () => {
-    // Inicializar con el primer valor de las opciones
-    const [selectedImage, setSelectedImage] = useState(imageOptions[0].value);
+    const dispatch = useDispatch();
+    const selectedAvatar = useSelector((state: RootState) => state.user.selectedAvatar) || imageOptions[0].value;
 
-    // Manejar el cambio del valor seleccionado en el selector
     const handleSelectChange = (value: string) => {
-        setSelectedImage(value);
+        dispatch(setSelectedAvatar(value)); // Actualiza el avatar en Redux
     };
 
     return (
         <div className="profile-form">
             <Avatar
-                imageUrl={selectedImage}
+                imageUrl={selectedAvatar}
                 altText="Avatar del usuario seleccionado"
                 size="small"
                 shape="circle"
@@ -32,8 +39,8 @@ export const AvatarSelector = () => {
                 <label htmlFor="user-select" className="headline4 profileLabel">Selecciona tu avatar</label>
                 <Select
                     placeholder="Selecciona una imagen"
-                    options={imageOptions}  // Pasar las opciones como objetos { value, label }
-                    value={selectedImage}
+                    options={imageOptions}
+                    value={selectedAvatar}
                     onChange={handleSelectChange}
                 />
             </div>

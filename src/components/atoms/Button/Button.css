@@ -8,11 +8,12 @@
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     /* Efecto de transición suave para cambios de estado */
     transition: background-color 0.3s ease, transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent; /* Elimina el efecto de resaltado en dispositivos móviles */
 }
 
 /* === Tamaño base de los botones en mobile === */
 .sizeButton {
-    height: var(--Numbers-7-rem-mobile); /* Altura basada en variable para mobile */
+    height: 2.4rem; /* Altura basada en variable para mobile */
     padding: var(--Numbers-2-rem-mobile) var(--Numbers-4-rem-mobile); /* Espaciado interno adaptable */
     gap: var(--Numbers-2-rem-mobile); /* Espaciado entre elementos hijos */
     border-radius: var(--Numbers-10-rem-mobile); /* Bordes redondeados para mobile */
@@ -21,8 +22,8 @@
 .sizeButton.icon-alone {
     padding: 0; /* Elimina padding cuando solo hay un ícono */
     display: flex;
-    width: var(--Numbers-7-rem-mobile);
-    height: var(--Numbers-7-rem-mobile);
+    width: 2.4rem;
+    height: 2.4rem;
     margin: 0; /* Sin márgenes adicionales */
 }
 
@@ -32,12 +33,10 @@
     background: var(--colors-brand-blue-500); /* Color de fondo primario */
     color: #FFF; /* Texto blanco */
 }
-
 .primary:hover {
     background: var(--colors-brand-blue-700); /* Color de fondo al hover */
     color: #FFF; /* Mantiene el texto blanco */
 }
-
 .primary:active {
     background: var(--colors-brand-blue-900); /* Color más oscuro al hacer clic */
     transform: scale(0.98); /* Efecto de "zoom" al presionar */
@@ -49,12 +48,10 @@
     background: var(--colors-brand-blue-100); /* Fondo más claro */
     color: var(--colors-brand-blue-500); /* Texto azul */
 }
-
 .secondary:hover {
     background: var(--colors-brand-blue-200); /* Fondo más oscuro al hover */
     color: var(--colors-brand-blue-700); /* Texto azul más oscuro */
 }
-
 .secondary:active {
     background: var(--colors-brand-blue-300); /* Fondo al hacer clic */
     color: var(--colors-brand-blue-900); /* Texto más oscuro al hacer clic */
@@ -67,17 +64,16 @@
     background: var(--colors-brand-blue-100); /* Fondo claro */
     color: var(--colors-brand-blue-500); /* Texto azul */
 }
-
 .tertiary:hover {
     background: var(--colors-brand-blue-200); /* Fondo al hover */
     color: var(--colors-brand-blue-700); /* Texto azul más oscuro */
 }
-
 .tertiary:active {
     background: var(--colors-brand-blue-300); /* Fondo al hacer clic */
     color: var(--colors-brand-blue-900); /* Texto más oscuro al hacer clic */
     transform: scale(0.98); /* Efecto de "zoom" al presionar */
 }
+
 
 /* === Icon Styles === */
 .label, .icon-alone {
@@ -117,7 +113,7 @@
         height: var(--Numbers-7-rem); /* Altura para desktop */
         width: auto;
         min-width: 2.4rem; /* Ancho mínimo */
-        max-width: 8rem; /* Ancho máximo */
+        max-width: 12rem; /* Ancho máximo */
         padding: var(--Numbers-3-rem) var(--Numbers-5-rem); /* Padding más grande */
         gap: var(--Numbers-2-rem); /* Espaciado entre elementos */
         border-radius: var(--Numbers-10-rem); /* Bordes redondeados */

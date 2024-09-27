@@ -6,3 +6,4 @@ export { Droplets } from './droplets';
 export { Wind } from './wind';
 export { UV } from './uv';
 export { Eye } from './eye';
+export { X } from './x';

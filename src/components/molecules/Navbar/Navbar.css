@@ -2,7 +2,7 @@
     display: flex;
     box-sizing: border-box;
     width: 100vw;
-    padding: 0rem 10rem;
+    padding: 0rem 12%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -15,4 +15,14 @@
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+}
+
+@media (min-width: 768px) {
+    .navbar-container{
+        padding: 0;
+    }
+    .navbar{
+        justify-content: center;
+        gap: 40%;
+    }
 }

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import AvatarSelector from './AvatarSelector';  // Asegúrate de que el path sea correcto
+import {AvatarSelector} from './AvatarSelector';  // Asegúrate de que el path sea correcto
 
 
 // Metadata para Storybook

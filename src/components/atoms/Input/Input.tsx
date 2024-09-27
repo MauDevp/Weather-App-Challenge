@@ -12,6 +12,10 @@ type Props = {
     placeholder?: string;
     /** Indica si el input es obligatorio */
     required?: boolean;
+    /** Id del input */
+    id?: string;
+    /** Tipo del input */
+    type?: string;
 }
 
 /** Componente Input que renderiza un input de texto */
@@ -20,10 +24,14 @@ export const Input = ({
         value='',
         onChange,
         placeholder='Placeholder',
-        required=false
+        required=false,
+        id='input',
+        type='text'
     }: Props) => {
     return (
         <input
+            type={type}
+            id={id}
             value={value}
             onChange={onChange}
             placeholder={placeholder}

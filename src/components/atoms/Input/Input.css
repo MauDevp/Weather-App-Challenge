@@ -1,8 +1,8 @@
 .input {
     display: flex;
-    min-width: 240px;
-    padding: var(--Numbers-3-rem-mobile, 8px);
-    border-radius: var(--Numbers-2-rem-mobile, 4px);
+    width: auto;
+    padding: var(--Numbers-4-rem-mobile);
+    border-radius: var(--Numbers-2-rem-mobile);
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -23,9 +23,9 @@ input::placeholder {
 
 @media (min-width: 768px) {
     .input {
-        min-width: 262px;
-        padding: var(--Numbers-3-rem, 12px);
-        border-radius: var(--Numbers-2-rem, 8px);
+        width: auto;
+        padding: var(--Numbers-3-rem);
+        border-radius: var(--Numbers-2-rem);
         font-size: var(--desktop---caption);
     }
     

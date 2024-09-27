@@ -1,4 +1,4 @@
-import { ArrowLeft, ChevronDown, Trash, MarkerPin } from "../components/atoms/Icons";
+import { ArrowLeft, ChevronDown, Trash, MarkerPin, X } from "../components/atoms/Icons";
 
 // Definimos el tipo para los íconos
 interface IconDefinition {
@@ -13,4 +13,5 @@ export const iconLibrary: IconDefinition[] = [
     { name: 'trash', component: Trash, id: 'icon_trash' },
     { name: 'chevron-down', component: ChevronDown, id: 'icon-chevron_down' },
     { name: 'marker-pin', component: MarkerPin, id: 'icon-marker_pin' },
+    { name: 'x', component: X, id: 'icon-x' },
 ];
