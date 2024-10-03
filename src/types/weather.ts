@@ -14,5 +14,5 @@ export interface WeatherData {
         speed: number;
         deg: number;
     };
-    visibility: number; // Agregamos la propiedad visibility
+    visibility: number;
 }

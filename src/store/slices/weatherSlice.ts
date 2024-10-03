@@ -21,7 +21,7 @@ export const fetchWeather = createAsyncThunk(
 const weatherSlice = createSlice({
     name: 'weather',
     initialState: {
-        data: null as WeatherData | null, // Asegúrate de tipar el estado del clima
+        data: null as WeatherData | null,
         loading: false,
         error: null as string | null,
     },

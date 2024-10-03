@@ -1,6 +1,6 @@
 // src/store/slices/userSlice.ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { v4 as uuidv4 } from 'uuid'; // Asegúrate de importar uuid
+import { v4 as uuidv4 } from 'uuid';
 import { image1, image2, image3, image4, image5, image6, image7, image8 } from '../../../src/assets';
 
 interface Coordinates {
@@ -21,8 +21,8 @@ export interface UserState {
     coordinates: Coordinates;
     isModalOpen: boolean;
     isModalDeleteOpen: boolean;
-    selectedAvatar: string; // Añadir estado para el avatar seleccionado
-    userToDelete: string | null;  // Usuario seleccionado para eliminar
+    selectedAvatar: string;
+    userToDelete: string | null;
 }
 
 const initialState: UserState = {
